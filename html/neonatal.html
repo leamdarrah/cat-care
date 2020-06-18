@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Neonatal Kitten Care</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
+    <script defer src="javascript/neonatal_cat.js"></script>
+  </head>
+
+  <body>
+    <header>
+      
+      <!--https://www.youtube.com/watch?v=xMTs8tAapnQ-->
+      <!--tutorial followed-->
+      <div class="navigation">
+
+        <!--give us hamburger menu-->
+        <label for="toggle">&#9776;</label>
+
+        <!--works as normal checkbox but when you click hamburger, it will go from menu to hamburger icon-->
+
+        
+        <a href="index.html"><img class ="navbar_logo" src="images/navbar_logo.svg" width="250" height="auto" alt="Navbar Logo"></a>
+        
+        <a href="index.html"><img class ="cat_logo" src="images/cat_logo.svg" width="70" height="auto" alt="Cat Logo"></a>
+        <!--actual menu for the page links-->
+        <input type="checkbox" id="toggle"/>
+        <div class="menu">
+          <a href="outdoor.html">outdoor cats</a>
+          <a href="indoor.html">indoor cats</a>
+          <a href="neonatal.html">neonatal kittens</a>
+          <a href="misc.html">miscellaneous</a>
+        </div>
+       
+
+      </div>
+    </header>
+
+    <main>
+
+     <img class="sideline-images" src="images/newborn.jpg" alt="Newborn Kitten">
+
+    <h1 class="main-page-title">NEONATAL KITTEN CARE</h1>
+
+    <div class="main-body">
+        <p>
+          <h3 class="sub-topics">what is a neonatal kitten?</h3>
+          According to alleycat.org, a neonatal kitten is a kitten from newborn to four weeks old. Taking care of a newborn kitten is very hard because they don't know what to do, usually they rely on their own mother. However, if the mother is not around, it is up to you to take care of these small kittens which consist of round the clock care.
+          <br/>
+          <h3 class="sub-topics">feeding newborn kittens</h3>
+          When feeding newborn kittens, you need to syringe feed them with a specific kind of kitten formula. NEVER feed them any cow's milk or liquid if it is not from a cat or from formula. You need to feed the newborn kittens up to eight times a day, about four ounces a week when they are about one week old. (Dr. Marcia Martin)
+          <br/>
+          <h3 class="sub-topics">comfort</h3>
+          Because neonatal kittens cannot regulate their own body temperature, you need to have something to emit heat such as a heating pad or a Snugglesafe. Make sure the heat source isn't too hot so it won't burn the kitten. Neonatal kittens also love soft, fleece-like fabrics so to make it more comfortable for your kittens is to plop some soft blankets within their bed. 
+
+          <div class="responsive-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ep3jK1bZrB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <h3 class="sub-topics">bathroom</h3>
+          Neonatal kittens actually can't use the bathroom and is the mother cat's job to stimulate the kitten. However, if the neonatal kitten does not have a mother, you would need to sse a warm, moist cotton ball, tissue, or washcloth to gently rub the kittens’ anal area to stimulate urination and defecation. Completely solid feces usually will not form while kittens are drinking formula. If you notice the kittens are having trouble urinating or defecating, consult a veterinarian (alleycat.org)
+
+
+
+        </p>
+      </div>
+
+
+
+      
+        <h4 class="quiz-title">Take our quiz to see if you fully understand it!</h4>
+        <button data-modal-target="#popup" class="quiz-button">QUIZ ME!</button>
+
+
+        <div class="popup" id=popup>
+          <button data-close-button class="close-button">&times;</button>
+          <div class="container">
+            <div id="question-container" class="hide">
+              <div id="question">QUESTION</div>
+              <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+              </div>
+            </div>
+            <div class="controls">
+              <button id="start-btn" class="start-btn btn">START</button>
+              <button id="next-btn" class="next-btn btn hide">NEXT</button>
+            </div>
+          </div>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="main-footer-title">want to know more about cats?</div>
+        <div class="second-footer-title">check out these links!</div>
+
+        <div class="footer-images">
+          <a href="http://www.kittenlady.org/"><img src="images/kitten_lady.png" width="200" height="auto" alt="Kitten Lady"></a>
+
+          <a href="https://www.youtube.com/channel/UCtEnS6HGyK1oe71sxbJuhcw/featured"><img src="images/helpful_vet.png" width="200" height="auto" alt="Helpful Vet"></a>
+
+          <a href="https://www.jacksongalaxy.com/"><img src="images/jackson_galaxy.png" width="200" height="auto" alt="Jackson Galaxy"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,466 @@
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+/*--------------titles--------------*/
+
+#main-title{
+	font-size: 2.5rem;
+	text-align: center;
+	margin-top: 2rem;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+.main-page-title{
+	font-size: 2.5rem;
+	text-align: center;
+	width: 100%;
+  	font-weight: 600;
+}
+
+.orange-quotes{
+	text-align: right;
+	font-size: 2rem;
+	font-weight: 600;
+	margin-top: 2rem;
+	color: #d8885a;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+.orange-quotes-credit{
+	text-align: right;
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: #d8885a;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+.sub-topics{
+	text-align: left;
+	font-size: 2rem;
+	font-weight: 600;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	color: #d8885a;
+}
+
+
+.quiz-title{
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight: 400;
+	margin-top: 4rem;
+	margin-bottom: 3rem;
+	color: #d8885a;
+}
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.main-body{
+	width: 80%;
+	text-align: left;
+  	padding: 1rem;
+  	margin-left: auto;
+  	margin-right: auto;
+  	line-height: 2rem;
+}
+
+
+
+
+/*----------------IMAGES FOR INDEX ONLY----------------*/
+.main-page{
+	text-align: center;
+	margin-top: 10rem;
+}
+
+.main-page img{	/*target the image and not the link "a"*/
+	border-radius: 50%;
+	width:15rem;
+	height: 15rem;
+	margin-left: auto;
+	margin-right: auto;
+	object-fit: cover;	/*makes image not condensed*/
+	padding: 1rem;
+	transition: 0.5s;
+}
+
+
+.main-page img:hover{
+	opacity: 0.5;
+	transform: scale(1.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*IMAGES FOR PAGE LINKS*/
+.sideline-images{
+	width: 50%;
+	height: auto;
+	display: block;
+  	margin:auto;
+  	margin-top: 3rem;
+  	margin-bottom: 2rem;
+  	border-radius: 2%;
+}
+
+
+
+@media only screen and (max-width: 1000px){
+	.sideline-images{
+	width: 50%;
+	height: auto;
+	display: block;
+  	margin:auto;
+  	margin-top: 6rem;
+  	margin-bottom: 2rem;
+  	border-radius: 2%;
+	}
+}
+
+li{
+	list-style-type: circle;
+}
+
+
+
+/*----------------make video responsive----------------*/
+.responsive-video{
+	max-width: 100%;
+	height: 0;
+	padding-bottom: 50%;
+	position: relative;	/*video dimensions change with screen*/
+	display: block;
+	margin:2rem auto;
+}
+
+.responsive-video iframe{
+	position: absolute; /*video is reponsive because the sizing is 'absolute'*/
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin:0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------HAMBURGER MOBILE--------------------*/
+/*https://www.youtube.com/watch?v=xMTs8tAapnQ*/
+
+
+/*----LOGO----*/
+.navbar_logo{
+	float: left;
+	margin:0.5rem;
+}
+.cat_logo{
+	transform: scale(0);
+	height: 0;
+	width: 0;
+}
+
+@media only screen and (max-width: 1000px){
+	.navbar_logo{
+		transform: scale(0);
+		width:0;
+	}	
+
+	.cat_logo{
+	transform: scale(1);
+	float: left;
+	width: 70px;
+	height: auto;
+	margin-top: 0.5rem;
+	margin-left: 0.25rem;
+	}
+}
+
+
+/*both mobile and desktop*/
+
+.navigation{
+	border-bottom: 0.0625rem solid white;
+	text-align: right;
+	line-height: 4rem;
+	font-size: 1rem;
+}
+
+.menu{
+	float: right;
+}
+.menu a{
+	clear:left;  /*when you click on hamburger, there's a space at the top; seperates page links*/
+	text-decoration: none;
+	color: black;
+	margin:0 2rem;
+	padding:0.3125rem;
+	line-height: 3.125rem;
+}
+
+/*both mobile and desktop*/
+.menu a:hover{
+	background-color: #d8885a;
+	padding:0.3125rem;
+	transition: 0.3s;
+	font-weight: 400;
+}
+
+/*actual hamburger icon*/
+label{
+	margin:1rem;
+	font-size:2.5rem; /*hamburger size*/
+	line-height: 3.125rem;
+	float: left;
+	display: none;
+	width: 0.1rem;
+	color: #d8885a;
+}
+
+#toggle{
+	display: none;	/*doesnt show the checkbox when you toggle hamburger*/
+}
+
+@media only screen and (max-width: 1000px){
+	label{
+		display:block;
+		cursor: pointer; /*hovering over hamburger will change cursor type*/
+	} 
+	/*mobile mode when you DONT click on hamburger*/
+	.menu{
+		text-align: center;
+		width: 100%;
+		display:none;
+	}
+
+	/*menu in mobile mode when you click on hamburger*/
+	.menu a{
+		display: block;
+		color: black;
+		background-color: #f9efcf;
+		margin: 0;
+	}
+
+	/*when you hover over stuff on mobile mode*/
+	.menu a:hover{
+		background-color:#d8885a;
+		color:white;
+	}
+
+	#toggle:checked + .menu{
+		display:block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------quizzes------------------------*/
+.popup{
+	text-align: center;
+	position: fixed;	/*when scrolling, popup quiz will stay*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	transition: 0.25s ease-in-out;
+	border-radius: 10px;
+	background-color: #d8885a;
+	color: white;
+	padding: 1rem;
+	z-index: 10;
+	width: 50%;
+}
+
+
+.popup.active{
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.popup .close-button{
+	cursor: pointer;
+	background:none;
+	outline: none;
+	border:none;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #415c6e;
+	margin-left: 90%;
+	padding-bottom: 1rem;
+}
+
+
+/*
+#overlay{
+	position: fixed;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #415c6e;
+	pointer-events: none; /*overlay catch our clicks
+}
+
+#overlay.active{
+	pointer-events: all;
+	opacity: 0.3;
+}
+
+*/
+
+
+.quiz-button{
+	text-align: center;
+	text-decoration: none;
+	background-color: #f3d799;
+	color: #FFF;
+	font-size: 1.5rem;
+	padding: 1rem 8rem;
+	border-radius: 0.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border:none;
+}
+
+.quiz-button a:hover{
+	transform: scale(1);
+}
+
+
+
+/*---------------quiz CONTENT------------------------*/
+/*--https://www.youtube.com/watch?v=riDzcEQbX6k--*/
+
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+
+.container{
+	text-align: center;
+}
+
+.btn-grid{
+	display: grid;
+	gap: 0.5rem;	/*spacing between the anwswer buttons*/
+}
+
+.btn{
+	padding: 0.5rem;
+	font-size: 0.75rem;
+	margin: 1rem 0;
+	background-color: #415c6e;
+	border:none;
+	color: white;
+	border-radius: 3px;
+
+}
+
+.btn.correct {
+  color: #1ef758;
+}
+
+
+.start-btn, .next-btn{
+	font-weight: bold;
+	padding: 1rem 2rem;
+}
+
+.hide{
+	display: none;
+}
+
+
+
+/*----------------footer------------------*/
+
+footer {
+	font-family: 'Quicksand', sans-serif;
+	display: block;
+	width: 100%;
+	height:100%;
+	background-color: #d8885a;
+	margin-top: 10rem;
+}
+
+.footer-content{
+	text-align: center;
+	color: #FFF;
+	padding: 1rem;
+}
+
+.main-footer-title{
+	font-weight: 700;
+	font-size: 3rem;
+}
+
+.second-footer-title{
+	font-size: 2rem;
+	float: right;
+	margin-right: 20%;
+}
+
+
+.footer-images{
+	margin-top: 5rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3rem;
+
+}
+
+.footer-images img{
+	padding:0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

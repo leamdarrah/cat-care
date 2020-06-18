@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Indoor Cat Care</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
+    <script defer src="javascript/indoor_cat.js"></script>
+  </head>
+
+  <body>
+    <header>
+      
+      <!--https://www.youtube.com/watch?v=xMTs8tAapnQ-->
+      <!--tutorial followed-->
+      <div class="navigation">
+
+        <!--give us hamburger menu-->
+        <label for="toggle">&#9776;</label>
+
+        <!--works as normal checkbox but when you click hamburger, it will go from menu to hamburger icon-->
+
+        <a href="index.html"><img class ="navbar_logo" src="images/navbar_logo.svg" width="250" height="auto" alt="Navbar Logo"></a>
+        
+        <a href="index.html"><img class ="cat_logo" src="images/cat_logo.svg" width="70" height="auto" alt="Cat Logo"></a>
+        <!--actual menu for the page links-->
+        <input type="checkbox" id="toggle"/>
+        <div class="menu">
+          <a href="outdoor.html">outdoor cats</a>
+          <a href="indoor.html">indoor cats</a>
+          <a href="neonatal.html">neonatal kittens</a>
+          <a href="misc.html">miscellaneous</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+       <img class="sideline-images" src="images/pet-cat.jpg" alt="pet the cat">
+
+      <h1 class="main-page-title">INDOOR CAT CARE</h1>
+
+      <h2 class="orange-quotes">“In ancient times cats were worshipped as gods; they have not forgotten this.”</h2>
+      <h2 class="orange-quotes-credit">– Terry Pratchett</h2>
+  
+      <div class="main-body">
+        <p>
+          When you own a cat that stays mainly indoors, you need to focus on a few things: food, water, entertainment and grooming.
+
+          <h3 class="sub-topics">food</h3>
+          For food, you would need to provide food that is mostly protein whether its poultry or red meat. According to the ASPCA, “We recommend purchasing high-quality, brand-name kitten or cat food. Your veterinarian will be able to assess your new cat or kitten and determine the best diet. Factors such as age, activity level and health makes a difference in what and how much a cat should eat. Cats require taurine, an essential amino acid, for heart and eye health. The food you choose should be balanced for the life stage of your cat or kitten. Properly balanced foods will contain taurine.”
+          <br />
+          <h3 class="sub-topics">water</h3>
+          You need to give them fresh water everyday. Whenever it’s empty, you need to refill their water bowl. Even if the water bowl isn’t empty, always aim to change it daily to maintain cleanliness. When picking a bowl for your cat, try to get something easy to clean and is shallow enough for your cat to drink out of.
+          <br />
+          <h3 class="sub-topics">entertainment</h3>
+          Cats really like staring out the window. It’s like their TV! So try to have the curtains or blinds open for them to look at and a seat for them to lay on. Another way to entertain your indoor cat is to have scratch posts, feather toys, and even another cat to play! However, introducing another cat into the picture might complicate things around the household. Just make sure to take it easy when introducing the two cats. 
+          <br />
+          <h3 class="sub-topics">grooming</h3>
+          There are a couple rules when grooming your cat and it depends on the length of their fur. When they are a short-haired cat, you should comb their hair weekly. When it’s a long-haired cat, comb their fur daily because it tangles constantly. For your comb, make sure it's suited mainly for cats and the bristles are close to each other to grab more fur.
+          <br />
+          <h3 class="sub-topics">bathroom</h3>
+          All indoor cats must have a place to go to the bathroom. You can buy inexpensive cat litter at your local grocery store and buy a container for your cat. Make sure the cat litter isn't to harsh on your cats paws because they are very sensitive to those kinds of things. Make sure the cat litter is soft and not rugged.
+        </p>
+      </div>
+
+      
+      
+        <h4 class="quiz-title">Take our quiz to see if you fully understand it!</h4>
+        <button data-modal-target="#popup" class="quiz-button">QUIZ ME!</button>
+
+
+        <div class="popup" id=popup>
+          <button data-close-button class="close-button">&times;</button>
+          <div class="container">
+            <div id="question-container" class="hide">
+              <div id="question">QUESTION</div>
+              <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+              </div>
+            </div>
+            <div class="controls">
+              <button id="start-btn" class="start-btn btn">START</button>
+              <button id="next-btn" class="next-btn btn hide">NEXT</button>
+            </div>
+          </div>
+        </div>
+        </div>
+    </main>
+
+
+
+
+
+    
+
+    <footer>
+      <div class="footer-content">
+        <div class="main-footer-title">want to know more about cats?</div>
+        <div class="second-footer-title">check out these links!</div>
+
+        <div class="footer-images">
+          <a href="http://www.kittenlady.org/"><img src="images/kitten_lady.png" width="200" height="auto" alt="Kitten Lady"></a>
+
+          <a href="https://www.youtube.com/channel/UCtEnS6HGyK1oe71sxbJuhcw/featured"><img src="images/helpful_vet.png" width="200" height="auto" alt="Helpful Vet"></a>
+
+          <a href="https://www.jacksongalaxy.com/"><img src="images/jackson_galaxy.png" width="200" height="auto" alt="Jackson Galaxy"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
